@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+      .parent{
+       height: 500px;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-evenly;
+       align-items: center;
+      }
+      .Box{
+        display: flex;
+        border: 2px solid red;
+        background-color:blanchedalmond;
+        height: 400px;
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+      }
+      button{
+        background-color: green;
+        padding: 10px;
+        
+      }
+      
+      
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="Box" id="Box-1">
+        <h1>Basic</h1>
+        <p>$10/month</p>
+        <p>Feature 1</p>
+        <p>Feature 2</p>
+        <button>SignUp</button>
+      </div>
+
+     <div class="Box" id="Box-2">
+        <h1>Premium</h1>
+        <p>$30/month</p>
+        <p>Feature 1</p>
+        <p>Feature 2</p>
+        <p>Feature 3</p>
+        <button>SignUp</button>
+    </div>
+    <div class="Box" id="Box-2">
+        <h1>Pro</h1>
+        <p>$50/month</p>
+        <p>Feature 1</p>
+        <p>Feature 2</p>
+        <p>Feature 3</p>
+        <p>Feature 4</p>
+        <button>SignUp</button>
+
+    </div>
+
+     </div>
+
+</body>
+</html>
