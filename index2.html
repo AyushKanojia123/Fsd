@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GitHub Account</h1>
+    
+
+
+    <button>Search</button>
+
+
+</body>
+
+<script>
+    let b=fetch('https://api.github.com/users/AyushKanojia123')
+    async function name() {
+      const data=await b;
+      const data2 = await data.json();
+      console.log(data2);
+    }
+   name();
+
+   let user =document.createElement()
+    user.id="h2";
+    
+
+
+</script>
+</html>

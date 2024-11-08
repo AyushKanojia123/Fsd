@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+     let div=document.createElement('div');
+     div.id="parent";
+     div.style.backgroundColor="lightblue";
+     div.style.width="200px";
+     div.style.height="200px";
+     div.style.alignContent="center";
+     document.body.appendChild(div);
+    
+     let button=document.createElement('button');
+     button.innerHTML="<b>Change color</b>";
+     button.id="button"
+     div.appendChild(button);
+ 
+    let para=document.createElement('p');
+    para.id="p";
+    para.innerText="Insert Here"
+    div.appendChild(para);
+
+
+    document.getElementById("button").addEventListener("click",function(){
+    document.getElementById("p").innerHTML="<b>Hello World !</b>"
+   })
+
+    // document.getElementById("btn").onclick=function(){
+    // document.getElementById("p").innerHTML="<b>Hello World !</b>"
+
+</script>
+</html>
